@@ -6,5 +6,9 @@
     "canersss <65599719+canersss@users.noreply.github.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/canersss/socketio-liveball"
+  "homepage": "https://github.com/canersss/socketio-liveball",
+  "dependencies": {
+    "angular": "^1.8.0",
+    "semantic": "^2.4.1"
+  }
 }

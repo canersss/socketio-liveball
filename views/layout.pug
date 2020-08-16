@@ -5,13 +5,15 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
-  body(ng-app="app")
+  body(ng-app"app")
     block content
 
 
 
 
 block javascripts
+  script(src="/socket.io/socket.io.js")
   script(src="/angular/angular.min.js")
   script(src="/javascript/main.js")
-  script(src="/javascript/indexController.js")
+  script(src="/javascript/services/indexFactory.js")
+  script(src="/javascript/controller/indexController.js")

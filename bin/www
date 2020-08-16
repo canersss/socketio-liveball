@@ -9,8 +9,17 @@ var debug = require('debug')('socketio-liveball:server');
 var http = require('http');
 
 /**
+ * Socketio
+ */
+
+ const socketApi = require('../src/socketApi');
+ const io = socketApi.io;
+ io.attach(server);
+
+/**
  * Get port from environment and store in Express.
  */
+
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
